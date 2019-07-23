@@ -1,0 +1,102 @@
+:root{
+    --main-color:tomato;
+    --text-color:#fff;
+}
+
+body{
+    background-color:#F4F4F4;
+    margin: 0pxl
+    padding: 0px;
+ 
+    font: 20px/1.5 'Nunito', sans-serif !important;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 5;
+}
+
+header .logo{
+    text-transform: uppercase;
+    letter-spacing: .23m;
+    font-weight: 700;
+    color: black;
+}
+
+header>div .logo {
+    float: left;
+    padding: 1em 3.5em 1em 0.5em;
+}
+
+nav a {
+    padding:  1em 2.3em;
+    display: inline-block;
+    color:blue;
+    text-decoration: none;
+}
+
+a{
+    transition: .3s all ease;
+    -webkit-transtion: 0.3 all ease;
+    -o-transtion: 0.3s all ease;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+    /* flex-flow: row wrap;}*/ 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(500px, auto);
+}
+
+.box{
+    width: 300px;
+    height:200px;
+    background: var(--main-color);
+    margin:10px;
+    position: relative;
+    /* transition-property: width, background, border-radius, transform;
+    transition-duration: 4s; */
+    /* transition shorthand */
+    transition: all 4s;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+}
+/* Transition - active, hover, after, before */
+
+.box:hover{
+    width:200px;
+    background: #11998e;
+    border-radius: 40px;
+    transform: rotateY(180deg);
+}
+
+/* Gradient - linear gradient or radial gradient */
+.a{
+    background: linear-gradient(to right, green 10%, yellow 60%, pink)
+}
+.b{
+    background: radial-gradient(circle, red, black);
+}
+/* uigradients.com */
+
+.c{
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+.d{
+    background: linear-gradient(to right, #3494e6, #ec6ead);
+}
